@@ -20,6 +20,11 @@ img {
 
 h1 {
     font-size: 4rem;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
 }
 
 .contenedor {
@@ -39,3 +44,9 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media(min-width: 768px){
+    .dos-columnas{
+        display: flex; /** Elementos hijos se muestran de izquierda a derecha **/
+        gap: 2rem;        
+    }
+}
