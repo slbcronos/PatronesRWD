@@ -20,6 +20,11 @@ img {
 
 h1 {
     font-size: 4rem;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
 }
 
 .contenedor {
@@ -39,3 +44,13 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px){
+    .dos-columnas{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2rem;
+        padding-right: 2rem; /** mio **/
+        
+    }
+}
