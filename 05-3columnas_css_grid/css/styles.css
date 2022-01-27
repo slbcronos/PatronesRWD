@@ -21,16 +21,19 @@ img {
 
 h1 {
     font-size: 4rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 3.2rem;
+    text-align: center;
 }
 
 .contenedor {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
+    padding-right: 1rem;
 }
 
 p {
@@ -47,5 +50,30 @@ p {
     text-transform: uppercase;
 }
 
+p{
+    text-align: justify;
+}
 
 /** CODIGO AQUI **/
+
+@media(min-width: 768px){
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-auto-flow: column;
+        gap: 2rem;
+    }
+
+}
+
+.contenido-principal{
+    grid-column: 2 / 3;
+}
+
+.sidebar-1{
+    grid-column: 1 / 2;
+}
+
+.sidebar-2{
+    grid-column: 3 / 3;
+}
