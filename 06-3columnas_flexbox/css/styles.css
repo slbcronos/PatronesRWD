@@ -21,10 +21,12 @@ img {
 
 h1 {
     font-size: 4rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 3.2rem;
+    text-align: center;
 }
 
 p {
@@ -48,3 +50,27 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+p{
+    text-align: justify;
+}
+
+@media (min-width: 768px){
+    .contenedor-flex{
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+}
+
+.sidebar{
+    flex-basis: calc(20% - 1rem);
+}
+
+.contenido-principal{
+    flex-basis: calc(60% - 1rem);
+}
+
+.sidebar-1{
+    order: -1;
+}
