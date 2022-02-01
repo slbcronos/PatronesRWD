@@ -56,7 +56,24 @@ p {
     .column-drop-flex{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
     }
+    
+}
+
+.contenido-principal , .primera{
+    flex-basis: calc(50% - 1rem);
+}
+
+@media (min-width: 768px) {
+    .contenido-principal,
+    .primera,
+    .segunda{
+        flex: calc(0 0 33.33% - 2rem);
+    }
+
+
+    
     
 }
