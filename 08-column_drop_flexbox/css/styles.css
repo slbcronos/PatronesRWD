@@ -21,14 +21,17 @@ img {
 
 h1 {
     font-size: 4rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 3.2rem;
+    text-align: center;
 }
 
 p {
     font-size: 2rem;
+    text-align: justify;
 }
 
 .contenedor {
@@ -48,3 +51,12 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 480px) {
+    .column-drop-flex{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+}
