@@ -32,6 +32,7 @@ h2 {
 p {
     font-size: 2rem;
     text-align: justify;
+    padding: 1rem;
 }
 
 .contenedor {
@@ -54,13 +55,43 @@ p {
 /** CODIGO AQUI **/
 
 @media (min-width: 768px) {
-    .layout-fhifter{
+    .layout-shifter{
         display: grid;
         grid-template-areas: "contenido"
                              "inferior";
-                             background-color: aqua;
+                             
+        
+        column-gap: 2rem;
+    }
+    .sidebar{
+        grid-area: inferior;
+    }
 
+    .contenido-principal{
+        grid-area: contenido;
+        grid-template-areas: "entrada1 entrada2";
+        grid-template-columns: repeat(2,1fr);
     }
 
     
+
+}
+
+@media (min-width: 992px){
+    .layout-shifter{
+        grid-template-areas: "contedido sidebar";
+        gap: 2rem;
+
+    }
+    .sidebar{
+        grid-area: sidebar;
+    }
+    .contenido-principal{
+        grid-area: contenido;
+        grid-template-areas: "entarda1"
+                              "entrada2";
+                              grid-template-columns: unset;
+
+
+    }
 }

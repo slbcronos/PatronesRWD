@@ -15,7 +15,8 @@ body {
     line-height: 2;
 }
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
@@ -24,6 +25,7 @@ h2 {
 
 p {
     font-size: 2rem;
+    text-align: justify;
 }
 
 .entrada-blog a {
@@ -37,3 +39,20 @@ p {
 }
 
 /** CODIGO AQUI **/
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Esto compone todo lo de las imagenes grandes */
+img {
+    max-width: 100%;
+}
+
+@media(min-width: 768px){
+    h1{
+        font-size: 6rem;
+        text-align: left;
+    }
+}
