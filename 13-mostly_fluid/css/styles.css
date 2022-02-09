@@ -45,7 +45,7 @@ p {
     margin: 0 auto;
 }
 
-/* Esto compone todo lo de las imagenes grandes */
+/* Esto compone todo lo de las imagenes grandes, siempre son responsivas */
 img {
     max-width: 100%;
 }

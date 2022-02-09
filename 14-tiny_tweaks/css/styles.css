@@ -21,6 +21,8 @@ img {
 
 h1 {
     font-size: 4rem;
+    text-align: left;
+    color: #cec0fc;
 }
 
 /** CODIGO AQUI **/
@@ -31,6 +33,7 @@ h2 {
 
 p {
     font-size: 2rem;
+    text-align: justify;
 }
 
 .contenedor {
@@ -50,3 +53,13 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+.otraimagen{
+    padding: 10rem;
+    padding-bottom: 1rem;
+}
+
+.rojo{
+    color: #85851c;
+}
+
